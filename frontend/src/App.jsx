@@ -6,6 +6,7 @@ import Home from './website/Pages/Home'
 import Store from './website/Pages/Store'
 import Deshboard from './admin/Pages/Deshboard'
 import CategoryAdd from './admin/Pages/Category/CategoryAdd'
+import CategoryView from './admin/Pages/Category/CategoryView'
 
 export default function App() {
   const router = createBrowserRouter(
@@ -34,6 +35,10 @@ export default function App() {
           },
           {
             path: "category",
+            element: <CategoryView />
+          },
+          {
+            path: "category/add",
             element: <CategoryAdd />
           }
         ]
